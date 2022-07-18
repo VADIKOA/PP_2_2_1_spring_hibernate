@@ -25,7 +25,7 @@ public class User {
    @JoinColumn(name = "car_id")
    private Car car;
 
-   @Autowired
+
    public User(String firstName, String lastName, String email, Car car) {
       this.firstName = firstName;
       this.lastName = lastName;

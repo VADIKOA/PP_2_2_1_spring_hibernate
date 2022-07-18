@@ -18,10 +18,10 @@ public class MainApp {
       UserService userService = context.getBean(UserService.class);
       CarService carService = context.getBean(CarService.class);
 
-      carService.add(new Car("BMW", 5));
-      carService.add(new Car("VAZ", 2109));
-      carService.add(new Car("GAZ", 21));
-      carService.add(new Car("MAZ", 6124));
+//      carService.add(new Car("BMW", 5));
+//      carService.add(new Car("VAZ", 2109));
+//      carService.add(new Car("GAZ", 21));
+//      carService.add(new Car("MAZ", 6124));
 
       Car car1 = carService.getCarId(10l);
       Car car2 = carService.getCarId(11l);

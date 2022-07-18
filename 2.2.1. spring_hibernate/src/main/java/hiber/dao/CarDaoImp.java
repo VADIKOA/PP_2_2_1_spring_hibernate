@@ -1,5 +1,6 @@
 package hiber.dao;
 
+import hiber.config.AppConfig;
 import hiber.model.Car;
 import hiber.model.User;
 import org.hibernate.SessionFactory;
@@ -10,8 +11,11 @@ import java.util.List;
 
 @Repository
 public class CarDaoImp implements CarDao {
-    @Autowired
-    private SessionFactory sessionFactory;
+    private final SessionFactory sessionFactory;
+
+    public CarDaoImp(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 
     @Override
     public void add(Car car) {
